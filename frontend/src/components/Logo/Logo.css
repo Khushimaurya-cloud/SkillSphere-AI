@@ -1,0 +1,33 @@
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-image{
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.logo-text{
+    margin-left: -6px;
+}
+
+.logo-text h1{
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.logo-text p{
+    margin-top: 2px;
+    color: #dbeafe;
+    font-size: 15px;
+    line-height: 1.2;
+}

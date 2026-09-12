@@ -1,0 +1,60 @@
+.main-content {
+    flex: 1;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.main-content h1{
+    margin: 30px 30px 8px;
+    font-size: 22px;
+    color: #1f2937;
+    font-weight: 700px;
+    letter-spacing: -0.5px;
+}
+
+.main-content p {
+    margin: 0 30px;
+    color: #64748b;
+    font-family: 15px;
+    font-size: 13px;
+}
+.analyze-all {
+    margin: 25px 30px;
+    padding: 18px 24px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.analyze-all h2 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    color: white;
+}
+
+.analyze-all p {
+    margin: 0;
+    font-size: 13px;
+    color: white;
+    line-height: 1.4;
+    margin-left: 29px;
+}
+
+.analyze-all button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    background: white;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.analyze-all button:hover {
+    background: #f1f5f9;
+}

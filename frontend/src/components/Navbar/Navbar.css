@@ -1,0 +1,79 @@
+.top-navbar {
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px 0 30px;
+    box-sizing: border-box;
+}
+
+.top-navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu-icon {
+    font-size: 30px;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.top-navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.top-upgrade-btn {
+    height: 44px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.top-upgrade-btn:hover {
+    background: #1d4ed8;
+}
+
+.top-bell-icon {
+    width: 28px;
+    height: 28px;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.top-profile {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    min-height: 42px !important;
+
+    border-radius: 50% !important;
+
+    background: #2563eb !important;
+    color: #ffffff !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 17px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+    text-align: center !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    flex-shrink: 0 !important;
+    cursor: pointer;
+}

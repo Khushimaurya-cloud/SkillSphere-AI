@@ -1,0 +1,588 @@
+* {
+  box-sizing: border-box;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 28px 32px;
+  background: #f7faff;
+  color: #10245b;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.dashboard-header p {
+  margin: 5px 0 0;
+  font-size: 15px;
+  color: #31508d;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.welcome div:first-child {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.welcome strong {
+  font-size: 18px;
+}
+
+.welcome span {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #31508d;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #2864e8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+/* ================= SCORE CARDS ================= */
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.score-card {
+  height: 125px;
+  padding: 14px;
+  background: white;
+  border: 1px solid #d9e5f5;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(30, 80, 150, 0.05);
+}
+
+/* ICON */
+
+.score-icon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 10px;
+  background: #edf4ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+  font-weight: bold;
+
+  z-index: 2;
+}
+
+.github-svg {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+  display: block;
+}
+
+/* SCORE CONTENT */
+
+.score-info {
+  position: absolute;
+  left: 66px;
+  top: 17px;
+  z-index: 3;
+}
+
+.score-info h3 {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.score-number {
+  margin-top: 12px;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.score-number span {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.score-info > b {
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+/* SCORE CIRCLE */
+
+.score-circle {
+  position: absolute;
+
+  width: 72px;
+  height: 72px;
+
+  right: 14px;
+  top: 45px;
+
+  border: 7px solid #e2e8f0;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+
+  border-radius: 50%;
+}
+
+/* COLORS */
+
+.blue {
+  color: #1261e8;
+}
+
+.green {
+  color: #07983e;
+}
+
+.purple {
+  color: #6935db;
+}
+
+.orange {
+  color: #f28b00;
+}
+
+/* ================= MAIN GRID ================= */
+
+.main-grid,
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+/* ================= BOX ================= */
+
+.dashboard-box {
+  background: white;
+  border: 1px solid #d9e5f5;
+  border-radius: 12px;
+  padding: 15px 17px;
+  box-shadow: 0 2px 8px rgba(30, 80, 150, 0.04);
+}
+
+/* ================= BOX HEADER ================= */
+
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e4ebf5;
+}
+
+.box-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.box-header button {
+  border: 1px solid #bcd1f5;
+  background: white;
+  color: #075bd8;
+  padding: 6px 11px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.box-header button:hover {
+  background: #f1f6ff;
+}
+
+/* ================= PROFILE ================= */
+
+.profile-content {
+  position: relative;
+  padding-top: 3px;
+}
+
+.profile-row {
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #edf1f7;
+
+  width: 70%;
+}
+
+.profile-icon {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 9px;
+  background: #eef5ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 10px;
+
+  font-size: 16px;
+}
+
+.profile-row b {
+  font-size: 12px;
+}
+
+.profile-row p {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #075bd8;
+}
+
+.green-text {
+  color: #07983e !important;
+}
+
+/* PROFILE IMAGE */
+
+.profile-image {
+  position: absolute;
+  right: 20px;
+  top: 55px;
+}
+
+.document-icon {
+  width: 75px;
+  height: 95px;
+
+  border: 5px solid #a9c8ff;
+  border-radius: 11px;
+
+  background: #f5f9ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+}
+
+.check {
+  position: absolute;
+  right: -9px;
+  bottom: -8px;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background: #20b993;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-list {
+  padding-top: 7px;
+}
+
+.skill-row {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.skill-icon {
+  width: 27px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.skill-row b {
+  width: 75px;
+  font-size: 12px;
+}
+
+.skill-bar {
+  flex: 1;
+
+  height: 7px;
+
+  background: #e5ebf4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blue-bar,
+.orange-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.blue-bar {
+  background: #2864e8;
+}
+
+.orange-bar {
+  background: #f59e0b;
+}
+
+.skill-row strong {
+  width: 35px;
+
+  font-size: 11px;
+  text-align: right;
+
+  color: #075bd8;
+}
+
+.orange-text {
+  color: #f59e0b !important;
+}
+
+/* ================= ANALYSIS ================= */
+
+.analysis-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  padding-top: 11px;
+}
+
+.analysis-card {
+  min-height: 190px;
+
+  padding: 11px;
+
+  border: 1px solid #dce6f5;
+  border-radius: 10px;
+
+  background: #fbfdff;
+}
+
+.analysis-icon {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 9px;
+
+  background: #edf4ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.analysis-card .github-small {
+  width: 36px;
+  height: 36px;
+}
+
+.analysis-card .github-small svg {
+  width: 22px;
+  height: 22px;
+  fill: #111827;
+}
+
+.analysis-card h3 {
+  font-size: 12px;
+  color: #10245b;
+
+  margin: 9px 0 7px;
+}
+
+.analysis-card strong {
+  font-size: 12px;
+}
+
+.analysis-card p {
+  color: #31508d;
+
+  font-size: 11px;
+  line-height: 1.45;
+
+  min-height: 48px;
+}
+
+.analysis-card button {
+  padding: 6px 9px;
+
+  background: white;
+
+  border: 1px solid currentColor;
+  border-radius: 6px;
+
+  color: inherit;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* ================= INSIGHTS ================= */
+
+.insights-box {
+  padding-bottom: 6px;
+}
+
+.insight {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 58px;
+
+  border-bottom: 1px solid #e6edf6;
+}
+
+.insight:last-child {
+  border-bottom: none;
+}
+
+.insight > span {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #eef5ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  flex-shrink: 0;
+}
+
+.insight b {
+  font-size: 12px;
+}
+
+.insight p {
+  margin: 3px 0 0;
+
+  font-size: 11px;
+
+  color: #31508d;
+}
+
+.success {
+  color: #07983e;
+}
+
+.warning {
+  color: #f59e0b;
+}
+
+.tip {
+  color: #075bd8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+  .score-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-grid,
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .dashboard {
+    padding: 18px;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+  }
+
+  .welcome {
+    display: none;
+  }
+
+  .score-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-row {
+    width: 100%;
+  }
+
+  .profile-image {
+    display: none;
+  }
+}
+/* Move last two score headings slightly left */
+.score-card:nth-child(3) .score-info,
+.score-card:nth-child(4) .score-info {
+  left: 58px;
+  right: 78px;
+}
+
+.score-card:nth-child(3) .score-info h3,
+.score-card:nth-child(4) .score-info h3 {
+  font-size: 12px;
+  text-align: center;
+}

@@ -1,0 +1,189 @@
+.menu p,
+.extra-menu p{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 12px;
+    margin: 2px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu p:hover,
+.extra-menu p:hover{
+    background-color: white;
+    color: #2563eb;
+}
+
+.divider{
+    height:1px;
+    background:rgba(255,255,255,.18);
+    margin:14px 0;
+}
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 12px;
+    margin: 2px 0;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu-link:hover {
+    background-color: white;
+    color: #2563eb;
+}
+/* SETTINGS */
+
+.settings-button {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.settings-button:hover,
+.settings-button.settings-open {
+    background: rgba(255,255,255,0.10);
+    border-radius: 7px;
+}
+
+.settings-button span:nth-child(2) {
+    flex: 1;
+}
+
+.settings-chevron {
+    font-size: 13px;
+}
+
+
+/* OPTIONS */
+
+.settings-options {
+    margin: 4px 10px 8px 25px;
+    padding-left: 9px;
+    border-left: 1px solid rgba(255,255,255,0.30);
+}
+
+.settings-options > button {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: rgba(255,255,255,0.82);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 9px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.settings-options > button:hover {
+    background: rgba(255,255,255,0.10);
+    color: white;
+}
+
+.settings-options > button.option-active {
+    background: rgba(255,255,255,0.14);
+    color: white;
+}
+
+
+/* OPTION CONTENT */
+
+.option-content {
+    margin: 0 4px 6px;
+    padding: 8px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 6px;
+}
+
+.option-content b {
+    display: block;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.option-content p {
+    margin: 0;
+    color: rgba(255,255,255,0.72);
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+
+/* LOGOUT */
+
+.settings-options .logout-option {
+    color: #fecaca;
+    margin-top: 3px;
+}
+
+.settings-options .logout-option:hover {
+    background: rgba(239,68,68,0.12);
+    color: white;
+}
+
+
+/* LOGOUT CONTENT */
+
+.logout-content {
+    margin: 0 4px 5px;
+    padding: 9px;
+    background: rgba(239,68,68,0.10);
+    border-radius: 6px;
+}
+
+.logout-content b {
+    display: block;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.logout-content p {
+    margin: 0 0 8px;
+    color: rgba(255,255,255,0.75);
+    font-size: 9px;
+}
+
+.logout-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.logout-buttons button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.logout-buttons button:first-child {
+    background: white;
+    color: #172554;
+}
+
+.logout-buttons .confirm-logout {
+    background: #ef4444;
+    color: white;
+}

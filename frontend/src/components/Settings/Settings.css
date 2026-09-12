@@ -1,0 +1,145 @@
+.settings-main {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 15px;
+    margin-top: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.settings-main:hover {
+    background: rgba(255,255,255,0.10);
+    border-radius: 7px;
+}
+
+.settings-main span:nth-child(2) {
+    flex: 1;
+}
+
+.settings-arrow {
+    font-size: 14px;
+}
+
+
+/* SETTINGS SUBMENU */
+
+.settings-submenu {
+    margin: 5px 8px 5px 25px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.settings-submenu > button {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: rgba(255,255,255,0.85);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 9px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.settings-submenu > button:hover {
+    background: rgba(255,255,255,0.10);
+}
+
+.settings-submenu > button.sub-active {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+
+/* SMALL CONTENT */
+
+.setting-small-content {
+    margin: 0 5px 7px 5px;
+    padding: 8px 9px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 6px;
+}
+
+.setting-small-content b {
+    display: block;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.setting-small-content span {
+    display: block;
+    color: rgba(255,255,255,0.75);
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+
+/* LOGOUT */
+
+.settings-submenu .logout-setting {
+    color: #fecaca;
+    margin-top: 3px;
+}
+
+.settings-submenu .logout-setting:hover {
+    background: rgba(239,68,68,0.15);
+    color: #fff;
+}
+
+
+/* LOGOUT CONTENT */
+
+.logout-small-content {
+    margin: 0 5px 5px;
+    padding: 9px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+}
+
+.logout-small-content b {
+    display: block;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.logout-small-content > span {
+    display: block;
+    color: rgba(255,255,255,0.75);
+    font-size: 9px;
+    margin-bottom: 8px;
+}
+
+.logout-small-content div {
+    display: flex;
+    gap: 5px;
+}
+
+.logout-small-content div button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.logout-small-content div button:first-child {
+    background: white;
+    color: #172554;
+}
+
+.logout-small-content .confirm-logout {
+    background: #ef4444;
+    color: white;
+}

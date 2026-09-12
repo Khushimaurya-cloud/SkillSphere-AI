@@ -1,0 +1,142 @@
+.snapshot {
+    margin: 20px 30px;
+    padding: 20px 25px;
+    background: white;
+    border: 1px solid #dbe3ef;
+    border-radius: 14px;
+}
+
+.snapshot-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.snapshot-head h2 {
+    margin-right: 5px;
+    color: #172554;
+    font-size: 22px;
+}
+.snapshot-subtitle {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px; 
+    margin:  2px 0 0 35px;
+}
+.snapshot-head span {
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.snapshot-body {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.scores {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    gap: 30px;
+    width: 500px;
+}
+
+.score {
+    width: 90px;
+    flex-shrink: 0;
+    text-align: center;
+    margin: 0 40px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #172554;
+    border: 7px solid #dbeafe;
+}
+
+.linkedin {
+    border-top-color: #2563eb;
+}
+
+.github {
+    border-top-color: #16a34a;
+}
+
+.resume {
+    border-top-color: #7c3aed;
+}
+
+.score h3 {
+    margin: 7px 0 2px;
+    color: #172554;
+    font-size: 14px;
+}
+
+.score p {
+    margin: 0;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.line {
+    width: 1px;
+    height: 70px;
+    background: #dbe3ef;
+    flex-shrink: 0;
+}
+
+.overall {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.overall h3 {
+    margin: 0 0 8px;
+    color: #172554;
+    font-size: 15px;
+}
+.overall-line {
+    height: 140px;
+}
+
+.half-circle {
+    width: 150px;
+    height: 75px;
+    margin: auto;
+    border-radius: 150px 150px 0 0;
+    border: 9px solid #dbeafe;
+    border-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.half-circle strong {
+    color: #2563eb;
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.overall span {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 6px 13px;
+    border-radius: 20px;
+    background: #dcfce7;
+    color: #166534;
+    font-size: 11px;
+    font-weight: bold;
+}

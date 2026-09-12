@@ -1,0 +1,645 @@
+/* MAIN PAGE */
+
+.github-page {
+    padding: 20px 24px;
+    color: #172554;
+}
+
+
+/* HEADER*/
+
+.github-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.github-title h1 {
+    margin: 0;
+    color: #172554;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.github-title p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* BACK BUTTON*/
+
+.back-btn {
+    padding: 9px 16px;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    background: white;
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background: #eff6ff;
+}
+
+
+/*TOP SECTION*/
+
+.github-top {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+
+/* GITHUB SCORE CARD*/
+
+.github-score-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 18px;
+
+    background: white;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 12px;
+
+    min-height: 190px;
+}
+
+
+/* SCORE LEFT */
+
+.github-score-left {
+    min-width: 150px;
+
+    text-align: center;
+
+    border-right: 1px solid #dbe3ef;
+
+    padding-right: 22px;
+}
+
+.github-score-left h2 {
+    margin: 0 0 12px;
+
+    color: #172554;
+
+    font-size: 17px;
+}
+
+
+/* SCORE CIRCLE */
+
+.github-score-circle {
+    width: 85px;
+    height: 85px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    border: 7px solid #2563eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.github-score-circle strong {
+    color: #172554;
+
+    font-size: 25px;
+}
+
+.github-score-circle span {
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.github-score-left b {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #166534;
+
+    font-size: 13px;
+}
+
+
+/*PROFILE INFORMATIOn*/
+
+.github-profile-info {
+    flex: 1;
+}
+
+
+/* EACH PROFILE DETAIL */
+
+.profile-detail {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.profile-detail:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ICON */
+
+.detail-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #eff6ff;
+
+    border-radius: 8px;
+
+    color: #2563eb;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+/* GITHUB ICON */
+
+.github-icon {
+    color: #172554;
+}
+
+
+/* PROFILE HEADING */
+
+.profile-detail h3 {
+    margin: 0 0 4px;
+
+    color: #172554;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* PROFILE TEXT */
+
+.profile-detail p {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 13px;
+}
+
+
+/* PROFILE URL */
+
+.profile-url {
+    color: #2563eb !important;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/*PROFILE OVERVIEW */
+
+.profile-overview {
+    padding: 18px;
+
+    background: white;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 12px;
+}
+
+.profile-overview h2 {
+    margin: 0 0 15px;
+
+    color: #172554;
+
+    font-size: 17px;
+}
+
+
+/* OVERVIEW GRID */
+
+.overview-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.overview-grid div {
+    padding: 13px 8px;
+
+    text-align: center;
+
+    border-right: 1px solid #e2e8f0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.overview-grid div:nth-child(3n) {
+    border-right: none;
+}
+
+.overview-grid div:nth-child(n + 4) {
+    border-bottom: none;
+}
+
+.overview-grid strong {
+    display: block;
+
+    color: #172554;
+
+    font-size: 18px;
+}
+
+.overview-grid span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/*IDDLE SECTION*/
+
+.github-middle {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-top: 16px;
+}
+
+
+/*COMMON CARD */
+
+.github-card {
+    padding: 17px;
+
+    background: white;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 12px;
+}
+
+.github-card h2 {
+    margin: 0 0 14px;
+
+    color: #172554;
+
+    font-size: 16px;
+}
+
+
+/*REPOSITORY ANALYSIS */
+
+.progress-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+.progress-item:last-child {
+    border-bottom: none;
+}
+
+.progress-item span {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.progress-item strong {
+    color: #2563eb;
+
+    font-size: 13px;
+}
+
+
+/*TOP LANGUAGES */
+
+.language-chart {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* DONUT */
+
+.donut {
+    width: 105px;
+    height: 105px;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #2563eb 0% 40%,
+        #facc15 40% 65%,
+        #ef4444 65% 80%,
+        #7c3aed 80% 90%,
+        #cbd5e1 90% 100%
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+
+/* DONUT CENTER */
+
+.donut::before {
+    content: "";
+
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: white;
+}
+
+
+/* DONUT TEXT */
+
+.donut strong,
+.donut span {
+    position: relative;
+
+    z-index: 1;
+}
+
+.donut strong {
+    color: #172554;
+
+    font-size: 18px;
+}
+
+.donut span {
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+
+/* LANGUAGE LIST */
+
+.language-list {
+    flex: 1;
+}
+
+.language-list p {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 0;
+
+    padding: 6px 0;
+
+    border-bottom: 1px solid #eef2f7;
+
+    font-size: 12px;
+}
+
+.language-list p:last-child {
+    border-bottom: none;
+}
+
+.language-list strong {
+    color: #172554;
+}
+
+/* ACTIVITY */
+
+.activity-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-item span {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.activity-item strong {
+    color: #2563eb;
+
+    font-size: 13px;
+}
+
+ /*STRENGTHS + IMPROVEMENTS */
+
+.strength-improve {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+    margin-top: 16px;
+}
+
+
+/* STRENGTHS */
+
+.strengths h2 {
+    color: #16a34a;
+}
+
+.strengths p {
+    color: #64748b;
+}
+
+
+/* IMPROVEMENTS */
+
+.improvements h2 {
+    color: #f97316;
+}
+
+.improvements p {
+    color: #64748b;
+}
+
+
+/* COMMON TEXT */
+
+.strengths p,
+.improvements p {
+    margin: 8px 0;
+
+    font-size: 13px;
+}
+
+
+/* AI RECOMMENDATIONS */
+
+.ai-recommendations {
+    margin-top: 16px;
+    padding: 18px;
+    background: white;
+    border: 1px solid #dbe3ef;
+    border-radius: 12px;
+}
+
+.ai-recommendations h2 {
+    margin: 0 0 16px;
+    color: #7c3aed;
+    font-size: 18px;
+}
+
+/* RECOMMENDATION GRID */
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* RECOMMENDATION CARD */
+
+.recommendation {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    column-gap: 10px;
+
+    padding: 12px;
+
+    background: #faf7ff;
+    border: 1px solid #e5d9ff;
+    border-radius: 9px;
+
+    min-height: 105px;
+}
+
+/* NUMBER */
+
+.recommendation > span {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #6d28d9;
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    grid-row: 1 / span 2;
+}
+
+/* TITLE */
+
+.recommendation h3 {
+    margin: 0 0 6px;
+
+    color: #172554;
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+/* DESCRIPTION */
+
+.recommendation p {
+    margin: 0;
+
+    color: #172554;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .recommendation-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+}

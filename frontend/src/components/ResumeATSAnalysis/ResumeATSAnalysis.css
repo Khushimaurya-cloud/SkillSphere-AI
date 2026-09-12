@@ -1,0 +1,713 @@
+/* =========================
+   RESUME ATS PAGE
+========================= */
+
+.resume-page {
+    width: calc(100vw - 300px);
+    margin-left: 300px;
+    padding: 18px 28px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: #f8fafc;
+    overflow-x: hidden;
+    color: #172554;
+}
+
+.resume-page * {
+    box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.resume-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+
+.resume-top h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.1;
+    color: #172554;
+}
+
+.resume-top p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #475569;
+}
+
+.back-btn {
+    padding: 8px 16px;
+    background: white;
+    border: 1px solid #2563eb;
+    border-radius: 7px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* =========================
+   TOP ATS + INFORMATION
+========================= */
+
+.top-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 18px;
+    margin-bottom: 14px;
+}
+
+.ats-card,
+.info-card,
+.box {
+    background: white;
+    border: 1px solid #cbdcf5;
+    border-radius: 9px;
+}
+
+/* ATS CARD */
+
+.ats-card {
+    height: 270px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ats-title {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #075bd8;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.ats-circle {
+    width: 108px;
+    height: 108px;
+    margin: 15px auto 5px;
+    border: 8px solid #1264dc;
+    border-right-color: #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ats-circle strong {
+    font-size: 35px;
+    line-height: 1;
+    color: #075bd8;
+}
+
+.ats-circle span {
+    font-size: 15px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.ats-card h2 {
+    margin: 4px 0;
+    color: #075bd8;
+    font-size: 17px;
+}
+
+.stars {
+    font-size: 19px;
+    color: #fbbf24;
+    letter-spacing: 2px;
+}
+
+.gray-star {
+    color: #b6bec9;
+}
+
+.score-message {
+    width: 88%;
+    margin: 7px auto 0;
+    padding: 8px;
+    border-radius: 6px;
+    background: #eff6ff;
+    color: #172554;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+/* INFORMATION CARD */
+
+.info-card {
+    height: 270px;
+    overflow: hidden;
+}
+
+.section-title {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #dbe3ef;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.section-title.blue {
+    color: #075bd8;
+}
+
+.section-title.green {
+    color: #15803d;
+}
+
+.section-title.red {
+    color: #dc2626;
+}
+
+.section-title.purple {
+    color: #6d28d9;
+}
+
+.info-row {
+    height: 46px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    padding: 0 18px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 13px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row span {
+    color: #172554;
+}
+
+.info-row strong {
+    color: #172554;
+    font-size: 13px;
+}
+
+/* =========================
+   FIVE SCORE CARDS
+========================= */
+
+.score-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.score-card {
+    height: 105px;
+    min-width: 0;
+    padding: 12px;
+    background: white;
+    border: 1px solid #cbdcf5;
+    border-radius: 9px;
+    position: relative;
+}
+
+.score-icon {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.score-icon svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.score-card h3 {
+    margin: 1px 0 0 52px;
+    padding-right: 5px;
+    font-size: 11px;
+    line-height: 1.25;
+    color: #172554;
+    font-weight: 700;
+    min-height: 28px;
+}
+
+.score-card > strong {
+    display: block;
+    margin: 4px 0 0 52px;
+    font-size: 22px;
+    line-height: 1;
+}
+
+/* Different score colors */
+
+.score-card.blue > strong {
+    color: #075bd8;
+}
+
+.score-card.green > strong {
+    color: #16a34a;
+}
+
+.score-card.purple > strong {
+    color: #6d28d9;
+}
+
+.score-card.orange > strong {
+    color: #f59e0b;
+}
+
+.score-card.teal > strong {
+    color: #1599a8;
+}
+
+/* Mini progress */
+
+.mini-progress {
+    width: 100%;
+    height: 6px;
+    margin-top: 8px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mini-progress div {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.blue .mini-progress div {
+    background: #075bd8;
+}
+
+.green .mini-progress div {
+    background: #16a34a;
+}
+
+.purple .mini-progress div {
+    background: #6d28d9;
+}
+
+.orange .mini-progress div {
+    background: #f59e0b;
+}
+
+.teal .mini-progress div {
+    background: #1599a8;
+}
+
+/* =========================
+   COMMON BOX
+========================= */
+
+.box {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   JOB MATCH
+========================= */
+
+.job-match {
+    padding-bottom: 13px;
+}
+
+.job-match > p {
+    margin: 10px 15px 8px;
+    font-size: 12px;
+    color: #172554;
+}
+
+.job-progress {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+}
+
+.job-progress > div {
+    flex: 1;
+    height: 9px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.job-progress > div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 82%;
+    background: #075bd8;
+    border-radius: 10px;
+}
+
+.job-progress strong {
+    color: #075bd8;
+    font-size: 19px;
+}
+
+/* =========================
+   TWO COLUMN SECTIONS
+========================= */
+
+.two-columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.two-columns .box {
+    margin-bottom: 0;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 15px;
+    row-gap: 7px;
+}
+
+.skill-item {
+    font-size: 12px;
+    color: #172554;
+}
+
+.skill-item span {
+    margin-right: 7px;
+    font-weight: 700;
+}
+
+.skill-item.matched span {
+    color: #16a34a;
+}
+
+.skill-item.missing span {
+    color: #dc2626;
+}
+
+/* =========================
+   KEYWORD ANALYSIS
+========================= */
+
+.keyword-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.keyword-columns > div {
+    padding: 10px 15px;
+}
+
+.keyword-columns > div:first-child {
+    border-right: 1px solid #dbe3ef;
+}
+
+.keyword-columns h3 {
+    margin: 0 0 8px;
+    font-size: 13px;
+}
+
+.green-text {
+    color: #15803d;
+}
+
+.red-text {
+    color: #dc2626;
+}
+
+.keyword-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.keyword {
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+.strong-keyword {
+    color: #15803d;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+}
+
+.missing-keyword {
+    color: #dc2626;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+}
+
+/* =========================
+   STRENGTHS / IMPROVEMENTS
+========================= */
+
+.point-item {
+    display: flex;
+    gap: 8px;
+    padding: 5px 15px;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #172554;
+}
+
+.point-item span {
+    flex-shrink: 0;
+    font-weight: 700;
+}
+
+.strength-point span {
+    color: #16a34a;
+}
+
+.improve-point span {
+    color: #dc2626;
+}
+
+/* =========================
+   AI RECOMMENDATIONS
+========================= */
+
+.recommendations {
+    margin-bottom: 0;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.recommendation {
+    min-width: 0;
+    min-height: 60px;
+    padding: 8px;
+    display: flex;
+    gap: 7px;
+    align-items: flex-start;
+    background: #faf7ff;
+    border-right: 1px solid #e2d9f8;
+}
+
+.recommendation:last-child {
+    border-right: none;
+}
+
+.recommendation > span {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #6d28d9;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.recommendation p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.35;
+    color: #172554;
+}
+
+/* =========================
+   PREVENT HORIZONTAL OVERFLOW
+========================= */
+
+.resume-page,
+.resume-page .top-section,
+.resume-page .score-cards,
+.resume-page .two-columns,
+.resume-page .keyword-columns,
+.resume-page .recommendation-grid {
+    max-width: 100%;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .resume-page {
+        width: calc(100vw - 280px);
+        margin-left: 280px;
+        padding: 15px 18px;
+    }
+
+    .top-section {
+        grid-template-columns: 270px minmax(0, 1fr);
+    }
+
+    .score-cards {
+        gap: 7px;
+    }
+
+    .score-card {
+        padding: 9px;
+    }
+
+    .score-card h3 {
+        margin-left: 27px;
+        font-size: 10px;
+    }
+
+    .score-card > strong {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .resume-page {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .top-section {
+        grid-template-columns: 1fr;
+    }
+
+    .score-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .keyword-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .keyword-columns > div:first-child {
+        border-right: none;
+        border-bottom: 1px solid #dbe3ef;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation {
+        border-right: none;
+        border-bottom: 1px solid #e2d9f8;
+    }
+}
+/* ===== FIX SIDEBAR TO CONTENT GAP ===== */
+
+.resume-page {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 32px !important;
+    padding-right: 24px !important;
+    width: auto !important;
+    max-width: none !important;
+    box-sizing: border-box;
+}
+
+/* Top heading */
+.resume-top {
+    width: 100%;
+    margin: 0 0 16px 0 !important;
+}
+
+/* Main content should use available space */
+.top-section,
+.score-cards,
+.box,
+.two-columns {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Remove unnecessary centering */
+.top-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* =========================
+   SCORE CARD FINAL FIX
+========================= */
+
+.score-card {
+    display: block !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.score-icon {
+    position: absolute !important;
+    top: 12px !important;
+    left: 12px !important;
+    width: 28px !important;
+    height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 17px !important;
+    z-index: 2 !important;
+}
+
+.score-icon svg {
+    width: 23px !important;
+    height: 23px !important;
+    display: block !important;
+}
+
+/* Heading starts clearly AFTER icon */
+.score-card h3 {
+    margin: 2px 4px 0 48px !important;
+    padding: 0 !important;
+    min-height: 28px !important;
+    font-size: 11px !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+}
+
+/* Score also starts after icon */
+.score-card > strong {
+    display: block !important;
+    margin: 3px 0 0 48px !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+}
+
+/* Progress bar */
+.score-card .mini-progress {
+    width: calc(100% - 24px) !important;
+    margin: 9px 12px 0 !important;
+}
